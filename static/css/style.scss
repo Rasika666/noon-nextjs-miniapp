@@ -1,0 +1,186 @@
+ 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    
+    --pink-color: #F16AD3;
+    --primary-color: blue;
+    --secondary-color: #333;
+    --default-color: #000;
+    --white-color: #fff;
+
+    --primary-font : "Open Sans"
+
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: var(--primary-font);
+    // margin-top: 3em;
+    background: var(--white-color);
+    height: 100vh;
+}
+
+main {
+    .post:last-child {
+        padding-bottom: 3em ;
+    }
+    .post{
+        // margin: 3em;
+        
+        .avatar {
+            margin: 1em;
+            .img-avatar{
+                display: flex;
+                align-items: center;
+                
+                img {
+                    border-radius: 50%;
+                    width: 10%;
+                }
+    
+                .name {
+                    padding: 1em;
+                    color: var(--primary-color);
+                    font-weight: 500;
+                }
+            }
+        } // avatar ends here
+        .image-box {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .img-text {
+                margin: 0 2em;
+                display: flex;
+                justify-content: space-between;
+                .text {
+                    position: absolute;
+                    bottom: 8px;
+                    color: var(--white-color);
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    span {
+                        font-weight: 800;
+                        font-size: 1.8rem;
+                    }
+                }
+                .icon {
+                    position: absolute;
+                    bottom: 8px;
+                    right: 16px;
+    
+                    i {
+                        color: red;
+                    }
+                }
+            }
+        } //image-box ends here
+    
+        .bottom-section {
+            margin: 1em 3em;
+            .like-button {
+                display: flex;
+                align-items: center;
+        
+                p {
+                    padding-left: 1em;
+                    font-weight: 800;
+                    color: var(--primary-color);
+                }
+                i {
+                    color: var(--primary-color);
+                }
+            } // end .like-button
+    
+            .details {
+                p{
+                    font-size: 1.1rem;
+                }
+                .tag {
+                    padding-top: 0.2rem;
+                    font-weight: bold;
+                    color: var(--primary-color);
+                }
+            } //end details
+    
+            .comment-section {
+                color: var(--secondary-color);
+            }
+        } //end bottom-section
+        hr {
+            border: 0;
+            height: 1px;
+            background:var(--secondary-color);
+        }
+    } // end section
+}
+
+
+footer {
+    // margin: 0 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--pink-color);
+    padding: 0.8rem 5rem ;
+    
+    
+    z-index: 3;
+    i {
+        color: var(--white-color);
+    }
+} //end foot
+
+@media only screen and (min-width: 768px) {
+    footer {
+        // margin: 0 5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        // display: flex;
+        // justify-content: space-between;
+        background-color:var(--pink-color);
+        padding: 0.8rem 10rem ;
+        height: 7rem;
+        padding-top: 1.8rem;
+        z-index: 3;
+        i {
+            color: var(--white-color);
+        }
+    } //end foot
+
+    main {
+        .post:first-child {
+            padding-top: 8rem;
+        }
+    } //end main
+
+    body {
+        width: 50vw;
+        margin: 0 auto;
+    }
+}
+
