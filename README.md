@@ -2,7 +2,7 @@
 ---
 
 ### Intro
-| This is single page responsive mini web application created using Nextjs framework. For the back-end expressjs framework | | was  used.There are 2 seperated servers for font-end and back-end. They are connec by simple REST API. The folder called | | noon_app cantain the front-end(Nextjs) stuff also the folder called server contain all the back-end(expressjs) stuff. The | | static folder just static design of web app. The web application was designed using mobile-first design.
+> This is single page responsive mini web application created using Nextjs framework. For the back-end expressjs framework was  used.There are 2 seperated servers for font-end and back-end. They are connec by simple REST API. The folder called noon_app cantain the front-end(Nextjs) stuff also the folder called server contain all the back-end(expressjs) stuff. The static folder just static design of web app. The web application was designed using mobile-first design.
 
 ---
 ### Technologies
